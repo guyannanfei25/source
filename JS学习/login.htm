@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Login Window</title>
+<script language="javascript" type="text/javascript">
+<!--
+
+	function jump()
+	{
+		if((document.getElementById("uname").value=="chongge")&&(documen.getElementById("pwd").value=="chongge"))
+		{
+			window.alert("true");
+			return true;
+		}else
+		{
+			window.alert("false;")
+			document.getElementById("uname").value="";
+			document.getElementById("pwd").value="";
+			return false;
+		}
+	}
+	function test()
+	{
+		window.alert("Login");
+	}
+	
+	
+//-->
+</script>
+</head>
+<body>
+
+<form action="ok.htm">
+username:<input type="text" id="uname"/><br/>
+password:<input type="password" id="pwd"/><br/>
+<input type="submit" onclick="return jump()"  id="submit" />
+</form>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<html>
+<head>
+<title>监测输入是否是数字</title>
+<script language=javascript type="text/javascript">
+<!--
+
+	function test(event)
+	{
+		if(event.keyCode<48||event.keyCode>57)
+		{
+			window.alert("你输入的不是数字!");
+			return false;
+		}
+	}
+	
+//-->
+</script>
+</head>
+<body>
+
+<input type="text" onkeypress="return test(event)" id="text1" />
+<input type="button" onclick="test()" value="提交"/>
+
+</body>
+</html>

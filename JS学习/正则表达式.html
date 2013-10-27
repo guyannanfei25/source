@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>正则表达式</title>
+<script language="javascript" type="text/javascript">
+<!--
+
+	function test()
+	{
+		var con=content.value;
+		//window.alert(con);
+		var Reg=/[a-zA-Z]{2,4}/gi;
+		while(res=Reg.exec(con))
+		{
+			window.alert(res[0]);
+		}
+	}
+	
+	//验证电子邮件
+	function test2()
+	{
+		var con=content.value;
+		var myReg=/^[a-zA-Z0-9-_]{3,9}@([a-zA-Z0-9]+\.)+[a-zA-Z]+[a-zA-Z]$/gi;
+		while(res=myReg.exec(con))
+		{
+			window.alert(res[0]);
+		}
+	}
+	
+
+//-->
+</script>
+</head>
+
+<body>
+<textarea id="content"></textarea><br />
+<input type="button" onclick="test2()" value="测试" />
+</body>
+</html>

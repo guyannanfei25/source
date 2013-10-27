@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>OK Window</title>
+<script language=javascript type="text/javascript">
+<!--
+
+	function test2()
+	{
+		var hobbies=document.getElementsByName("hobby");
+		//window.alert(hobbies.length);
+		for(var i=0;i<hobbies.length;i++)
+		{
+			if(hobbies[i].checked)
+			{
+				//window.alert("你的爱好是"+hobbies[i].value);
+				var a=a+","+hobbies[i].value;
+			}
+		}
+		window.alert("你的爱好是"+a);
+	}
+	
+	function test3()
+	{
+		var myObjs=document.getElementsByTagName("input");
+		for(var i=0;i<myObjs.length;i++)
+		{
+			window.alert(myObjs[i].value);
+		}
+	}
+	
+	
+//-->
+</script>
+</head>
+<body>
+
+<input type="checkbox" name="hobby" value="足球"/>足球
+<input type="checkbox" name="hobby" value="旅游"/>旅游
+<input type="checkbox" name="hobby" value="音乐"/>音乐
+
+<input type="button" value="testing" onclick="test2()" />
+<input type="button" value="testing" onclick="test3()" />
+
+</body>
+</html>

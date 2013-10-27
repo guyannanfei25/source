@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>父窗口调子窗口函数</title>
+<script>
+<!--
+	
+	var newwindow;
+	function info()
+	{
+		newwindow=window.open("login.htm","_blank");
+		/*newwindow.document.getElementById("uname").value=name.value;
+		newwindow.document.getElementById("pwd").value=passwd.value;
+		newwindow.jump();
+		window.alert("OK!");*/
+	}	
+	function login()
+	{
+		window.alert("OK!");
+		newwindow.test();
+		//window.alert(newwindow.document.getElementById("uname").value);
+		newwindow.document.getElementById("uname").value=document.getElementById("name").value;
+		newwindow.document.getElementById("pwd").value=document.getElementById("passwd").value;
+		newwindow.document.getElementById("submit").click();
+		window.alert("OK2!");
+	}
+
+//-->
+</script>
+</head>
+<body>
+name:<input type="text" id="name"><br/>
+pass:<input type="password" id="passwd"><br/>
+<input type="button" value="new window" onclick="info()" />
+<input type="button" value="login" onclick="login()" />
+</body>
+</html>

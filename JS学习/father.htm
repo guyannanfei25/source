@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Father Window</title>
+<script language=javascript type="text/javascript">
+<!--
+
+	var newwindow;
+	function test2()
+	{
+		newwindow=window.open("newwindow.htm","_blank");
+		//newwindow=window.open("http://www.baidu.com","_blank");
+	}
+
+	function test3()
+	{
+		newwindow.document.getElementById("text").innerText=text.value;
+	}
+	
+//-->
+</script>
+</head>
+<body>
+
+<input type="button" onclick="test2()" value="New window"/>
+<span id="myspan">!!!</span>
+<input type="text" value="" id="text"/>
+<input type="button" onclick="test3()" value="Send to new window"/>
+
+</body>
+</html>

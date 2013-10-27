@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>OK Window</title>
+<script language=javascript type="text/javascript">
+<!--
+
+	function jump()
+	{
+		clearInterval(val);
+		window.open("mangage.htm","_self");
+	}
+	setTimeout("jump()",5000);
+	
+	function change()
+	{
+		document.getElementById("time").innerText=parseInt(document.getElementById("time").innerText)-1;
+	}
+	
+	var val=setInterval("change()",1000);
+	
+	
+//-->
+</script>
+</head>
+<body>
+
+There left <span id="time">5</span>s to goto mangage page.....
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<script language=javascript type="text/javascript">
+<!--
+
+	function notify()
+	{
+		var val=document.getElementById("info").value;
+		window.alert(val);
+		opener.document.getElementById("myspan").innerText=val;
+	}
+
+//-->
+</script>
+
+I am a new window!
+
+<input type="text" value="" id="info"/>
+<input type="button" value="notify to father window" onclick="notify()" />
+<span id="text">init</span>
